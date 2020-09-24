@@ -28,7 +28,7 @@ class String
   end
 
   def count_sentences
-    self.split(/\.|\?|\!/)
-    binding.pry
+    arr = self.split(/\.|\?|\!/)
+    arr.delete_if { |x| x.length < 2 } 
   end
 end
