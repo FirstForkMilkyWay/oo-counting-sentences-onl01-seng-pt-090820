@@ -32,4 +32,5 @@ class String
     arr << self.split.delete_if{|x| x.empty?}
     binding.pry
   end
+  arr.count
 end
