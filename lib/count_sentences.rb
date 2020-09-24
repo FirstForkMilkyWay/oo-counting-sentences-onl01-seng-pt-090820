@@ -28,6 +28,6 @@ class String
   end
 
   def count_sentences
-    self.split.delete_if{|x| x.empty?}
+    self.split(".")count
   end
 end
