@@ -30,5 +30,6 @@ class String
   def count_sentences
     arr = self.split(/\.|\?|\!/)
     arr.delete_if { |x| x.length < 2 } 
+    arr.count
   end
 end
