@@ -29,7 +29,6 @@ class String
 
   def count_sentences
     arr = []
-    arr << self.split.delete_if{|x| x.empty?}
+    arr << self.split.delete_if{|x| x.empty?}.count
   end
-  arr.count
 end
