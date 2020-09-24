@@ -28,6 +28,7 @@ class String
   end
 
   def count_sentences
-    self.split.delete("").count
+    self.split.delete("")
+    binding.pry
   end
 end
