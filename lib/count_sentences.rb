@@ -28,6 +28,7 @@ class String
   end
 
   def count_sentences
+    hash = {}
     self.split.delete_if{|x| x.empty?}
     binding.pry
   end
