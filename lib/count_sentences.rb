@@ -28,7 +28,7 @@ class String
   end
 
   def count_sentences
-    self.split.select{ |a| a.present? }
+    self.split.count
     binding.pry
   end
 end
